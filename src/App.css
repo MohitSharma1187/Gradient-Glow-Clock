@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: #060a1f; */
+      background: linear-gradient(45deg, #0f40bc, #48473b);
+}
+#clock {
+  grid-row: 2;
+  cursor: pointer;
+  background: linear-gradient(45deg, #2196f3, #ffeb3b);
+  /* Gradient color */
+}
+#clock h2{
+    position: relative;
+    display: block;
+    color: #fff;
+    text-align:center;
+    margin: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-size: 0.9em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+#clock #time{
+    display: flex;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#clock #time div{
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
 }
-
-.App-link {
-  color: #61dafb;
+#clock #time div span{
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 80px;
+    background: #2196f3;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 3em;
+    z-index: 10;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
 }
+#clock #time div span:nth-child(1){
+    border-radius: 5px 5px 0px 0px;
+}
+#clock #time div span:nth-child(2) {
+  height: 30px;
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+  z-index: 9;
+  box-shadow: none;
+  background: #127fd6;
+  text-transform: uppercase;
+  border-radius: 0px 0px 5px 5px;
+}
+#clock #time div:last-child span{
+    background: #ff006a;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+#clock #time div:last-child span:nth-child(2){
+    background: #ec0062;
 }
