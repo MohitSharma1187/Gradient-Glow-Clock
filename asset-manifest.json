@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Gradient-Glow-Clock/static/css/main.6babefb4.css",
+    "main.js": "/Gradient-Glow-Clock/static/js/main.a3922e6d.js",
+    "index.html": "/Gradient-Glow-Clock/index.html",
+    "main.6babefb4.css.map": "/Gradient-Glow-Clock/static/css/main.6babefb4.css.map",
+    "main.a3922e6d.js.map": "/Gradient-Glow-Clock/static/js/main.a3922e6d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6babefb4.css",
+    "static/js/main.a3922e6d.js"
+  ]
+}
